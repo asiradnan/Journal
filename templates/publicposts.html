@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal</title>
+</head>
+<body>
+    <a href="/create">Create post</a><br>
+    {% for post in object_list %}
+        {{post}} <a href="/delete/{{ post.id }}/">delete</a> <br>
+    {% endfor %}
+</body>
+</html>
